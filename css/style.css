@@ -8,12 +8,12 @@
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: #113f6e;
-  -webkit-box-shadow: inset 0 0 5px #40759b;
-  box-shadow: inset 0 0 5px #40759b;
+  background: #f1f8ff;
+  -webkit-box-shadow: inset 0 0 5px #adc2d7;
+  box-shadow: inset 0 0 5px #adc2d7;
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-  background: #113f6e;
+  background: #f1f8ff;
 }
 body {
   width: 100%;
@@ -146,7 +146,7 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #010302 url("images/banner-dark.jpg") no-repeat top center;
+  background: #d8e2eb url("images/banner.jpg") no-repeat top center;
   background-attachment: fixed;
   font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   color: #555;
@@ -239,7 +239,6 @@ body {
 }
 #result-wrap,
 .article,
-#reward-content,
 .archives-wrap,
 .widget-wrap {
   background: #fff;
@@ -363,80 +362,80 @@ body {
 .widget blockquote p {
   margin: 0.5em 0;
 }
-.fa {
+.BR {
   font-size: 16px;
   font-style: normal;
 }
-.fa:before {
+.BR:before {
   font-family: iconfont !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: auto;
 }
-.fa-home:before {
+.BR-home:before {
   content: "\e001";
 }
-.fa-classify:before {
+.BR-classify:before {
   content: "\e002";
 }
-.fa-user:before {
+.BR-user:before {
   content: "\e003";
 }
-.fa-rss:before {
+.BR-rss:before {
   content: "\e004";
 }
-.fa-date:before {
+.BR-date:before {
   content: "\e005";
 }
-.fa-commt:before {
+.BR-commt:before {
   content: "\e006";
 }
-.fa-search:before {
+.BR-search:before {
   content: "\e007";
 }
-.fa-tag:before {
+.BR-tag:before {
   content: "\e008";
 }
-.fa-top:before {
+.BR-top:before {
   content: "\e009";
 }
-.fa-archive:before {
+.BR-archive:before {
   content: "\e00a";
 }
-.fa-next:before {
+.BR-next:before {
   content: "\e00b";
 }
-.fa-prev:before {
+.BR-prev:before {
   content: "\e00c";
 }
-.fa-views:before {
+.BR-views:before {
   content: "\e00d";
 }
-.fa-visitors:before {
+.BR-visitors:before {
   content: "\e00e";
 }
-.fa-link:before {
+.BR-link:before {
   content: "\e00f";
 }
-.fa-posts:before {
+.BR-posts:before {
   content: "\e010";
 }
-.fa-empty:before {
+.BR-empty:before {
   content: "\e011";
 }
-.fa-weibo:before {
+.BR-weibo:before {
   content: "\e012";
 }
-.fa-weichat:before {
+.BR-weichat:before {
   content: "\e013";
 }
-.fa-github:before {
+.BR-github:before {
   content: "\e014";
 }
-.fa-email:before {
+.BR-email:before {
   content: "\e015";
 }
-.fa-toc:before {
+.BR-toc:before {
   content: "\e016";
 }
 #header {
@@ -539,7 +538,7 @@ body {
   text-decoration: none;
   text-shadow: 1px 3px 6px #113f6e;
 }
-.main-nav-link .fa {
+.main-nav-link .BR {
   font-size: 18px;
 }
 .main-nav-link:hover,
@@ -678,7 +677,7 @@ body {
 #search-result .tips {
   text-align: center;
 }
-#search-result .tips .fa {
+#search-result .tips .BR {
   font-size: 54px;
   color: #adc2d7;
 }
@@ -1113,90 +1112,11 @@ a.article-title:hover {
   vertical-align: top;
   text-align: left;
 }
-.author-page .author .fa {
+.author-page .author .BR {
   margin-right: 0.4em;
 }
-.author-page .author .fa:before {
+.author-page .author .BR:before {
   margin-right: 0.2em;
-}
-.article-reward {
-  text-align: center;
-  margin: 30px 0;
-}
-#reward-btn {
-  display: inline-block;
-  font-size: 16px;
-  color: #40759b;
-  text-decoration: none;
-  line-height: 1.2em;
-  padding: 6px 16px;
-  margin-bottom: 12px;
-  border-radius: 20px;
-  -webkit-box-shadow: 0 -1px 4px #adc2d7 inset;
-  -webkit-box-shadow: 0 -1px 4px #adc2d7 inset;
-  box-shadow: 0 -1px 4px #adc2d7 inset;
-}
-#reward-btn:hover {
-  color: #fff;
-  background: #40759b;
-}
-#reward-content {
-  display: none;
-  position: relative;
-  overflow: visible;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 20px;
-  width: 624px;
-  margin: 0 auto;
-}
-@media screen and (max-width: 767px) {
-  #reward-content {
-    width: 100%;
-  }
-}
-#reward-content:before,
-#reward-content:after {
-  content: '';
-  position: absolute;
-  display: inline-block;
-  border-width: 0 12px 12px 12px;
-  border-style: solid;
-  border-color: #adc2d7 transparent;
-  left: 300px;
-}
-@media screen and (max-width: 767px) {
-  #reward-content:before,
-  #reward-content:after {
-    left: 48%;
-  }
-}
-#reward-content:before {
-  border-color: #adc2d7 transparent;
-  top: -12px;
-}
-#reward-content:after {
-  border-color: #fff transparent;
-  top: -10px;
-}
-.reward-code {
-  display: inline-block;
-  width: 240px;
-  margin: 24px 15px 10px 15px;
-  text-align: center;
-}
-.reward-code .er-code {
-  display: inline-block;
-  width: 240px;
-  height: 240px;
-}
-.reward-tit {
-  color: #40759b;
-  font-size: 16px;
-}
-.reward-desc {
-  color: #999;
 }
 .archives-wrap {
   margin: 30px 0;
@@ -1211,7 +1131,7 @@ a.article-title:hover {
   height: 50px;
   line-height: 50px;
 }
-.archive-title .fa {
+.archive-title .BR {
   color: #40759b;
   font-size: 1.5em;
   font-weight: normal;
@@ -1220,7 +1140,7 @@ a.article-title:hover {
 .archives {
   padding: 1em;
 }
-.archives .fa {
+.archives .BR {
   display: none;
 }
 .archive-article {
@@ -1282,7 +1202,7 @@ a.article-title:hover {
   -webkit-box-shadow: 0 0 5px #adc2d7 inset;
   -webkit-box-shadow: 0 0 5px #adc2d7 inset;
   box-shadow: 0 0 5px #adc2d7 inset;
-  border: 1px solid #40759b;
+  border: 1px solid #adc2d7;
   text-decoration: none;
 }
 #page-nav a.prev:before,
@@ -1306,7 +1226,7 @@ a.article-title:hover {
 }
 #footer {
   padding: 30px 0;
-  color: #aaa;
+  color: #555;
 }
 #footer a {
   color: #40759b;
@@ -1326,7 +1246,7 @@ a.article-title:hover {
 #footer-info i {
   font-style: normal;
 }
-#footer-info i.fa {
+#footer-info i.BR {
   font-size: 12px;
 }
 #footer-info span {
@@ -1608,7 +1528,7 @@ pre[class*="language-"].line-numbers > code {
 .widget-wrap:first-child {
   margin-top: 30px;
 }
-.widget-title .fa {
+.widget-title .BR {
   color: #40759b;
 }
 .widget {
@@ -1680,8 +1600,4 @@ pre[class*="language-"].line-numbers > code {
 .tag-list-count:after,
 .archive-list-count:after {
   content: ")";
-}
-.tagcloud a {
-  margin-right: 5px;
-  display: inline-block;
 }

@@ -20,11 +20,6 @@
     $('.fancybox').fancybox();
   }
 
-  // reward
-  $('#reward-btn').on("click", function(){
-    $('#reward-content').slideToggle(500);
-    return false;
-  });
 
   var isPC = ($(window).width()>768);
   // toc

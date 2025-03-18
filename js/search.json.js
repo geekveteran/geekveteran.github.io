@@ -62,7 +62,7 @@
                 });
             }).join('');
         } else {
-            html = '<div class="tips"><i class="fa fa-empty"></i><p>Results not found!</p></div>';
+            html = '<div class="tips"><i class="BR BR-empty"></i><p>Results not found!</p></div>';
         }
         searchResult.innerHTML = html;
     }

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   
   
-  <title>Why China Need Reporter and News | Geek Veteran Blog</title>
+  <title>Introduction of SSL / TLS | Geek Veteran Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
     <meta name="description" content="Older Solders never die, they just fade away">
@@ -86,7 +86,7 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-Why-china-need-reporter-and-news" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-Introduction-of-SSL-TLS" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
     
     
@@ -94,7 +94,7 @@
         
   
     <h1 class="p-name article-title" itemprop="headline name">
-      Why China Need Reporter and News
+      Introduction of SSL / TLS
     </h1>
   
 
@@ -105,7 +105,7 @@
       
       <span class="article-date">
   <i class="BR BR-date"></i>
-  <time class="dt-published" datetime="2025-04-09T13:52:19.000Z" itemprop="datePublished">20250409</time>
+  <time class="dt-published" datetime="2025-04-14T05:23:05.000Z" itemprop="datePublished">20250414</time>
 </span>
       
       
@@ -115,7 +115,7 @@
 
       
       
-<a href="/2025/04/09/Why-china-need-reporter-and-news/#comments" class="article-comment-link">
+<a href="/2025/04/14/Introduction-of-SSL-TLS/#comments" class="article-comment-link">
   
     
     
@@ -128,14 +128,54 @@
     </div>
     <div class="e-content article-entry" itemprop="articleBody">
       
-        
+        <h1 id="Introduction-to-SSL-TLS"><a href="#Introduction-to-SSL-TLS" class="headerlink" title="Introduction to SSL&#x2F;TLS"></a>Introduction to SSL&#x2F;TLS</h1><p><strong>SSL (Secure Sockets Layer)</strong> and its successor <strong>TLS (Transport Layer Security)</strong> are cryptographic protocols designed to provide <strong>secure communication</strong> over a <strong>computer network</strong>, especially the Internet. They are foundational to securing data in transit, ensuring <strong>confidentiality, integrity,</strong> and <strong>authentication</strong>.</p>
+<hr>
+<h2 id="Historical-Context"><a href="#Historical-Context" class="headerlink" title="Historical Context"></a>Historical Context</h2><ul>
+<li><strong>SSL</strong> was first developed by Netscape in the mid-1990s (SSL 2.0 and SSL 3.0).</li>
+<li>Due to various security flaws in SSL, <strong>TLS 1.0</strong> was introduced by the IETF as its successor in 1999.</li>
+<li>The current standard versions are <strong>TLS 1.2</strong> and <strong>TLS 1.3</strong>, with <strong>TLS 1.3</strong> (published in 2018) offering significant improvements in performance and security.</li>
+</ul>
+<hr>
+<h2 id="Core-Goals-of-SSL-TLS"><a href="#Core-Goals-of-SSL-TLS" class="headerlink" title="Core Goals of SSL&#x2F;TLS"></a>Core Goals of SSL&#x2F;TLS</h2><ol>
+<li><strong>Encryption</strong> – Ensures that the data exchanged remains confidential and cannot be read by unauthorized parties (e.g., eavesdroppers).</li>
+<li><strong>Integrity</strong> – Guarantees that the transmitted data is not altered in transit (using cryptographic hash functions).</li>
+<li><strong>Authentication</strong> – Verifies the identity of one or both parties (usually the server, optionally the client).</li>
+</ol>
+<hr>
+<h2 id="High-Level-Architecture"><a href="#High-Level-Architecture" class="headerlink" title="High-Level Architecture"></a>High-Level Architecture</h2><p>SSL&#x2F;TLS operates between the <strong>transport layer</strong> (typically TCP) and the <strong>application layer</strong> (e.g., HTTP, SMTP, FTP), effectively creating a secure channel for application protocols.</p>
+<p>The TLS protocol consists of two main sub-protocols:</p>
+<ol>
+<li><strong>Handshake Protocol</strong> – Establishes the parameters of the secure session, including cryptographic keys and algorithms.</li>
+<li><strong>Record Protocol</strong> – Handles the secure transmission of data using the agreed-upon parameters.</li>
+</ol>
+<hr>
+<h2 id="TLS-Handshake-Summary"><a href="#TLS-Handshake-Summary" class="headerlink" title="TLS Handshake Summary"></a>TLS Handshake Summary</h2><ol>
+<li><strong>ClientHello</strong>: The client proposes supported protocols, cipher suites, and sends a random nonce.</li>
+<li><strong>ServerHello</strong>: The server selects parameters and returns its certificate (often an X.509 certificate).</li>
+<li><strong>Key Exchange</strong>: Key agreement is performed (e.g., using ECDHE or RSA). A shared secret is derived.</li>
+<li><strong>Session Keys</strong>: Both parties derive symmetric keys from the shared secret.</li>
+<li><strong>Finished Messages</strong>: Both sides verify handshake integrity and complete the session setup.</li>
+</ol>
+<p><strong>Note</strong>: TLS 1.3 simplifies this handshake and removes support for outdated cryptographic primitives, such as RSA key transport and static Diffie–Hellman.</p>
+<hr>
+<h2 id="Modern-Use-Cases"><a href="#Modern-Use-Cases" class="headerlink" title="Modern Use Cases"></a>Modern Use Cases</h2><ul>
+<li><strong>HTTPS (HTTP over TLS)</strong>: Secures web browsing.</li>
+<li><strong>SMTP over TLS</strong>: Secures email transmission.</li>
+<li><strong>VPNs, VoIP, instant messaging</strong>, and any system requiring secure data transport.</li>
+</ul>
+<hr>
+<h2 id="Security-and-Deprecation"><a href="#Security-and-Deprecation" class="headerlink" title="Security and Deprecation"></a>Security and Deprecation</h2><ul>
+<li><strong>SSL (all versions)</strong> and <strong>TLS 1.0&#x2F;1.1</strong> are now considered insecure and deprecated.</li>
+<li>Modern systems should only use <strong>TLS 1.2 or TLS 1.3</strong>, and support forward secrecy and strong cipher suites.</li>
+</ul>
+
         
             <div id="toc-article">
                 
   <div class="widget-wrap" id="toc-wrap">
     <h3 class="widget-title"><i class="BR BR-toc"></i> Contents</h3>
     <div class="widget">
-      
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Introduction-to-SSL-TLS"><span class="toc-number">1.</span> <span class="toc-text">Introduction to SSL&#x2F;TLS</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Historical-Context"><span class="toc-number">1.1.</span> <span class="toc-text">Historical Context</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Core-Goals-of-SSL-TLS"><span class="toc-number">1.2.</span> <span class="toc-text">Core Goals of SSL&#x2F;TLS</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#High-Level-Architecture"><span class="toc-number">1.3.</span> <span class="toc-text">High-Level Architecture</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TLS-Handshake-Summary"><span class="toc-number">1.4.</span> <span class="toc-text">TLS Handshake Summary</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Modern-Use-Cases"><span class="toc-number">1.5.</span> <span class="toc-text">Modern Use Cases</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Security-and-Deprecation"><span class="toc-number">1.6.</span> <span class="toc-text">Security and Deprecation</span></a></li></ol></li></ol>
     </div>
   </div>
 
@@ -144,7 +184,7 @@
         
         
           <blockquote id="copyright">
-              <p>Original link: <a href="https://geekveteran.github.io/2025/04/09/Why-china-need-reporter-and-news/">https://geekveteran.github.io/2025/04/09/Why-china-need-reporter-and-news/</a></p>
+              <p>Original link: <a href="https://geekveteran.github.io/2025/04/14/Introduction-of-SSL-TLS/">https://geekveteran.github.io/2025/04/14/Introduction-of-SSL-TLS/</a></p>
               <p>Copyright Notice: Please give the reference.</p>
           </blockquote>
         
@@ -154,7 +194,7 @@
       
         <div class="article-tag-wrap">
           
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/News/" rel="tag">News</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/computer-network/" rel="tag">computer network</a></li></ul>
 
           
     <div class="social-share">
@@ -169,24 +209,15 @@
         
 <nav id="article-nav">
   
-    <a href="/2025/04/06/A-introduction-about-Computer-Vision/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2025/04/13/A-Analyst-Of-The-World-Market/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">older</strong>
       <div class="article-nav-title">
         
-          A Introduction About Computer Vision
+          A Analyst Of The World Market
         
       </div>
     </a>
   
-  
-    <a href="/2025/04/10/A-introduction-about-Slam/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">newer</strong>
-      <div class="article-nav-title">
-        
-          A Introduction About Slam(Simultaneous Localization and Mapping)
-        
-      </div>
-    </a>
   
 </nav>
 

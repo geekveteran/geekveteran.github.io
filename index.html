@@ -87,6 +87,178 @@
 
       <div class="outer">
         <section id="main">
+<article id="post-Introduction-of-SSL-TLS" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2025/04/14/Introduction-of-SSL-TLS/">Introduction of SSL / TLS</a>
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="article-meta">
+      
+      <span class="article-date">
+  <i class="BR BR-date"></i>
+  <time class="dt-published" datetime="2025-04-14T05:23:05.000Z" itemprop="datePublished">20250414</time>
+</span>
+      
+      
+      
+<a href="/2025/04/14/Introduction-of-SSL-TLS/#comments" class="article-comment-link">
+  
+  <i class="BR BR-commt"></i>
+  Guestbook
+</a>
+
+
+    </div>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Introduction-to-SSL-TLS"><a href="#Introduction-to-SSL-TLS" class="headerlink" title="Introduction to SSL&#x2F;TLS"></a>Introduction to SSL&#x2F;TLS</h1><p><strong>SSL (Secure Sockets Layer)</strong> and its successor <strong>TLS (Transport Layer Security)</strong> are cryptographic protocols designed to provide <strong>secure communication</strong> over a <strong>computer network</strong>, especially the Internet. They are foundational to securing data in transit, ensuring <strong>confidentiality, integrity,</strong> and <strong>authentication</strong>.</p>
+<hr>
+<h2 id="Historical-Context"><a href="#Historical-Context" class="headerlink" title="Historical Context"></a>Historical Context</h2><ul>
+<li><strong>SSL</strong> was first developed by Netscape in the mid-1990s (SSL 2.0 and SSL 3.0).</li>
+<li>Due to various security flaws in SSL, <strong>TLS 1.0</strong> was introduced by the IETF as its successor in 1999.</li>
+<li>The current standard versions are <strong>TLS 1.2</strong> and <strong>TLS 1.3</strong>, with <strong>TLS 1.3</strong> (published in 2018) offering significant improvements in performance and security.</li>
+</ul>
+<hr>
+<h2 id="Core-Goals-of-SSL-TLS"><a href="#Core-Goals-of-SSL-TLS" class="headerlink" title="Core Goals of SSL&#x2F;TLS"></a>Core Goals of SSL&#x2F;TLS</h2><ol>
+<li><strong>Encryption</strong> – Ensures that the data exchanged remains confidential and cannot be read by unauthorized parties (e.g., eavesdroppers).</li>
+<li><strong>Integrity</strong> – Guarantees that the transmitted data is not altered in transit (using cryptographic hash functions).</li>
+<li><strong>Authentication</strong> – Verifies the identity of one or both parties (usually the server, optionally the client).</li>
+</ol>
+<hr>
+<h2 id="High-Level-Architecture"><a href="#High-Level-Architecture" class="headerlink" title="High-Level Architecture"></a>High-Level Architecture</h2><p>SSL&#x2F;TLS operates between the <strong>transport layer</strong> (typically TCP) and the <strong>application layer</strong> (e.g., HTTP, SMTP, FTP), effectively creating a secure channel for application protocols.</p>
+<p>The TLS protocol consists of two main sub-protocols:</p>
+<ol>
+<li><strong>Handshake Protocol</strong> – Establishes the parameters of the secure session, including cryptographic keys and algorithms.</li>
+<li><strong>Record Protocol</strong> – Handles the secure transmission of data using the agreed-upon parameters.</li>
+</ol>
+<hr>
+<h2 id="TLS-Handshake-Summary"><a href="#TLS-Handshake-Summary" class="headerlink" title="TLS Handshake Summary"></a>TLS Handshake Summary</h2><ol>
+<li><strong>ClientHello</strong>: The client proposes supported protocols, cipher suites, and sends a random nonce.</li>
+<li><strong>ServerHello</strong>: The server selects parameters and returns its certificate (often an X.509 certificate).</li>
+<li><strong>Key Exchange</strong>: Key agreement is performed (e.g., using ECDHE or RSA). A shared secret is derived.</li>
+<li><strong>Session Keys</strong>: Both parties derive symmetric keys from the shared secret.</li>
+<li><strong>Finished Messages</strong>: Both sides verify handshake integrity and complete the session setup.</li>
+</ol>
+<p><strong>Note</strong>: TLS 1.3 simplifies this handshake and removes support for outdated cryptographic primitives, such as RSA key transport and static Diffie–Hellman.</p>
+<hr>
+<h2 id="Modern-Use-Cases"><a href="#Modern-Use-Cases" class="headerlink" title="Modern Use Cases"></a>Modern Use Cases</h2><ul>
+<li><strong>HTTPS (HTTP over TLS)</strong>: Secures web browsing.</li>
+<li><strong>SMTP over TLS</strong>: Secures email transmission.</li>
+<li><strong>VPNs, VoIP, instant messaging</strong>, and any system requiring secure data transport.</li>
+</ul>
+<hr>
+<h2 id="Security-and-Deprecation"><a href="#Security-and-Deprecation" class="headerlink" title="Security and Deprecation"></a>Security and Deprecation</h2><ul>
+<li><strong>SSL (all versions)</strong> and <strong>TLS 1.0&#x2F;1.1</strong> are now considered insecure and deprecated.</li>
+<li>Modern systems should only use <strong>TLS 1.2 or TLS 1.3</strong>, and support forward secrecy and strong cipher suites.</li>
+</ul>
+
+        
+        
+          <blockquote id="copyright">
+              <p>Original link: <a href="https://geekveteran.github.io/index.html">https://geekveteran.github.io/index.html</a></p>
+              <p>Copyright Notice: Please give the reference.</p>
+          </blockquote>
+        
+      
+    </div>
+    <footer class="article-footer">
+      
+        <div class="article-tag-wrap">
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/computer-network/" rel="tag">computer network</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>Share:</span>
+    </div>
+
+
+
+        </div>
+      
+      
+      
+    </footer>
+  </div>
+</article>
+
+
+<article id="post-A-Analyst-Of-The-World-Market" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2025/04/13/A-Analyst-Of-The-World-Market/">A Analyst Of The World Market</a>
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="article-meta">
+      
+      <span class="article-date">
+  <i class="BR BR-date"></i>
+  <time class="dt-published" datetime="2025-04-13T06:11:35.000Z" itemprop="datePublished">20250413</time>
+</span>
+      
+      
+      
+<a href="/2025/04/13/A-Analyst-Of-The-World-Market/#comments" class="article-comment-link">
+  
+  <i class="BR BR-commt"></i>
+  Guestbook
+</a>
+
+
+    </div>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+        
+        
+          <blockquote id="copyright">
+              <p>Original link: <a href="https://geekveteran.github.io/index.html">https://geekveteran.github.io/index.html</a></p>
+              <p>Copyright Notice: Please give the reference.</p>
+          </blockquote>
+        
+      
+    </div>
+    <footer class="article-footer">
+      
+        <div class="article-tag-wrap">
+          
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Finance/" rel="tag">Finance</a></li></ul>
+
+          
+    <div class="social-share">
+      <span>Share:</span>
+    </div>
+
+
+
+        </div>
+      
+      
+      
+    </footer>
+  </div>
+</article>
+
+
 <article id="post-A-Analyst-About-Modern-NBA" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-inner">
     
@@ -757,82 +929,11 @@
 </article>
 
 
-<article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2025/02/27/hello-world/">Hello World</a>
-    </h1>
-  
 
+<nav id="page-nav">
 
-      </header>
-    
-    <div class="article-meta">
-      
-      <span class="article-date">
-  <i class="BR BR-date"></i>
-  <time class="dt-published" datetime="2025-02-27T15:57:41.077Z" itemprop="datePublished">20250227</time>
-</span>
-      
-      
-      
-<a href="/2025/02/27/hello-world/#comments" class="article-comment-link">
-  
-  <i class="BR BR-commt"></i>
-  Guestbook
-</a>
-
-
-    </div>
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-        
-        
-          <blockquote id="copyright">
-              <p>Original link: <a href="https://geekveteran.github.io/index.html">https://geekveteran.github.io/index.html</a></p>
-              <p>Copyright Notice: Please give the reference.</p>
-          </blockquote>
-        
-      
-    </div>
-    <footer class="article-footer">
-      
-        <div class="article-tag-wrap">
-          
-          
-    <div class="social-share">
-      <span>Share:</span>
-    </div>
-
-
-
-        </div>
-      
-      
-      
-    </footer>
-  </div>
-</article>
-
+<span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next</a>
+</nav>
 
 </section>
         
@@ -845,6 +946,14 @@
       <ul>
         
           <li>
+            <a href="/2025/04/14/Introduction-of-SSL-TLS/">Introduction of SSL / TLS</a>
+          </li>
+        
+          <li>
+            <a href="/2025/04/13/A-Analyst-Of-The-World-Market/">A Analyst Of The World Market</a>
+          </li>
+        
+          <li>
             <a href="/2025/04/13/A-Analyst-About-Modern-NBA/">A Analyst About Modern NBA</a>
           </li>
         
@@ -854,14 +963,6 @@
         
           <li>
             <a href="/2025/04/10/A-introduction-about-Slam/">A Introduction About Slam(Simultaneous Localization and Mapping)</a>
-          </li>
-        
-          <li>
-            <a href="/2025/04/09/Why-china-need-reporter-and-news/">Why China Need Reporter and News</a>
-          </li>
-        
-          <li>
-            <a href="/2025/04/06/A-introduction-about-Computer-Vision/">A Introduction About Computer Vision</a>
           </li>
         
       </ul>
@@ -877,7 +978,7 @@
 <div class="widget-wrap">
   <h3 class="widget-title"><i class="BR BR-archive"></i> Archive</h3>
   <div class="widget">
-    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/">2025</a><span class="archive-list-count">9</span></li></ul>
+    <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/">2025</a><span class="archive-list-count">11</span></li></ul>
   </div>
 </div>
 
@@ -886,7 +987,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title"><i class="BR BR-tag"></i> Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Computer-Vision/" rel="tag">Computer Vision</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Struct/" rel="tag">Data Struct</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/FPS-Game/" rel="tag">FPS Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/" rel="tag">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo-Theme/" rel="tag">Hexo Theme</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/News/" rel="tag">News</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Sports/" rel="tag">Sports</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Computer-Vision/" rel="tag">Computer Vision</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Data-Struct/" rel="tag">Data Struct</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/FPS-Game/" rel="tag">FPS Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Finance/" rel="tag">Finance</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Game/" rel="tag">Game</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo-Theme/" rel="tag">Hexo Theme</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/News/" rel="tag">News</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Sports/" rel="tag">Sports</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/computer-network/" rel="tag">computer network</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 

@@ -494,9 +494,9 @@ body {
 #logo,
 #subtitle {
   text-decoration: none;
-  font: bold 42px/1.2 "宋体";
+  font: bold 42px/1.2 "Aria";
   white-space: nowrap;
-  color: #fff;
+  color: #000;
   text-shadow: 1px 3px 6px #113f6e;
 }
 #logo {
@@ -532,7 +532,7 @@ body {
   display: inline-block;
   padding: 3px 18px 3px;
   line-height: 30px;
-  color: #fff;
+  color: #000;
   font-size: 16px;
   border: 1px solid transparent;
   text-decoration: none;
@@ -543,7 +543,7 @@ body {
 }
 .main-nav-link:hover,
 .main-nav-link.current {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #000;
   -webkit-box-shadow: 0 0 10px #adc2d7 inset;
   -webkit-box-shadow: 0 0 10px #adc2d7 inset;
   box-shadow: 0 0 10px #adc2d7 inset;
@@ -574,7 +574,7 @@ body {
   width: 380px;
   height: 32px;
   font-size: 16px;
-  color: #fff;
+  color: #000;
 }
 @media screen and (max-width: 767px) {
   #search-form label {
@@ -600,25 +600,25 @@ body {
   padding: 7px 11px 7px 35px;
   line-height: 16px;
   width: 100%;
-  color: #fff;
+  color: #000;
   background: transparent;
   border: 1px solid transparent;
-  border-bottom-color: #fff;
+  border-bottom-color: #000;
   -webkit-box-shadow: 0 0 10px #adc2d7 inset;
   -webkit-box-shadow: 0 0 10px #adc2d7 inset;
   box-shadow: 0 0 10px #adc2d7 inset;
 }
 #search-form input::-webkit-input-placeholder {
-  color: #fff;
+  color: #000;
 }
 #search-form input::-moz-placeholder {
-  color: #fff;
+  color: #000;
 }
 #search-form input:-moz-placeholder {
-  color: #fff;
+  color: #000;
 }
 #search-form input:-ms-input-placeholder {
-  color: #fff;
+  color: #000;
 }
 #result-wrap {
   -webkit-box-sizing: border-box;
@@ -1219,7 +1219,7 @@ a.article-title:hover {
 }
 #page-nav a.current,
 #page-nav .page-number.current {
-  background: #fff;
+  background: #000;
 }
 #page-nav a:hover {
   border-bottom-color: #fff;
